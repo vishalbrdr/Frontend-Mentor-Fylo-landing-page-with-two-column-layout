@@ -1,0 +1,36 @@
+// ## Colors
+// ### Primary
+$Very-Dark-Blue: hsl(243, 87%, 12%);
+$Desaturated-Blue: hsl(238, 22%, 44%);
+// ### Accent
+$Bright-Blue: hsl(224, 93%, 58%);
+$Moderate-Cyan: hsl(170, 45%, 43%);
+// ### Neutral
+$Light-Grayish-Blue: hsl(240, 75%, 98%);
+$Light-Gray: hsl(0, 0%, 75%);
+
+// ##font-family
+$font-body: "Open Sans";
+$font-heading: "Raleway";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  @media only screen and (max-width: 995px) {
+    font-size: 55%;
+  }
+}
+body {
+  font-size: 1.6rem;
+  font-family: $font-body, sans-serif;
+}
+@import "./header";
+@import "./testimonial";
+@import "./cta";
+@import "./footer";

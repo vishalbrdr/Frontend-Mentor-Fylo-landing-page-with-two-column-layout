@@ -1,0 +1,93 @@
+// ## Colors
+// ### Primary
+$Very-Dark-Blue: hsl(243, 87%, 12%);
+$Desaturated-Blue: hsl(238, 22%, 44%);
+// ### Accent
+$Bright-Blue: hsl(224, 93%, 58%);
+$Moderate-Cyan: hsl(170, 45%, 43%);
+// ### Neutral
+$Light-Grayish-Blue: hsl(240, 75%, 98%);
+$Light-Gray: hsl(0, 0%, 75%);
+
+// ##font-family
+$font-body: "Open Sans";
+$font-heading: "Raleway";
+.footer {
+  background-color: $Very-Dark-Blue;
+  padding: 10rem 8rem;
+  padding-bottom: 6rem;
+  display: grid;
+  grid-gap: 3rem;
+  @media only screen and (max-width: 800px) {
+   padding: 6rem 4rem;
+  }
+  a,
+  li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+  }
+  .contacts {
+    display: grid;
+    align-items: start;
+    grid-gap: 2rem;
+    grid-auto-rows: max-content;
+    flex-shrink: 0;
+    li {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 2rem;
+      }
+      span {
+        align-self: start;
+      }
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 25rem 2fr 1fr;
+    grid-gap: 5rem;
+    @media only screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: stretch;
+    @media only screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-gap: 5rem;
+    }
+    & > * {
+      display: grid;
+      align-items: start;
+      grid-gap: 2rem;
+      grid-auto-rows: max-content;
+      justify-content: center;
+      @media only screen and (max-width: 800px) {
+        justify-content: start;
+      }
+    }
+  }
+  .socials {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-items: start;
+    grid-gap: 3rem;
+    align-content: start;
+    @media only screen and (max-width: 800px) {
+      justify-self: center;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3.4rem;
+      width: 3.4rem;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+  }
+}
